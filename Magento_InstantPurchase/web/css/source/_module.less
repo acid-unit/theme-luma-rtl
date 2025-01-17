@@ -1,0 +1,33 @@
+/*
+ * Copyright © Acid Unit (https://acid.7prism.com). All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+& when (@media-common = true) {
+    .box-tocart {
+        .action.instant-purchase {
+            &:extend(.abs-button-l all);
+            &:extend(.abs-button-responsive all);
+
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+
+            vertical-align: top;
+        }
+    }
+}
+
+//
+//  Desktop
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    .box-tocart {
+        .action.instant-purchase {
+            margin-bottom: 0;
+            margin-left: 1%; // @rtl
+            width: 49%;
+        }
+    }
+}
