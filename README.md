@@ -5,7 +5,7 @@ Magento 2 Luma theme RTL.
 Can be used as a parent for themes that use Hebrew, Arabic, and other RTL script languages.
 
 Based on [Blank RTL](https://github.com/acid-unit/theme-blank-rtl/) theme `v100.4.7-p1-0`, which, in turn,
-is based on Magento 2 Blank theme `v100.4.7-p1` (built-in to Magento `v2.4.7-p1`)
+is based on Magento 2 original Blank theme `v100.4.7-p1` (built-in to Magento `v2.4.7-p1`)
 
 It was not tested on the previous Magento versions, but as long as it is Magento 2.4.X,
 the theme should work perfectly fine (though there is a chance some styles will be off)
@@ -33,13 +33,22 @@ for `<body>` tag, `dir="rtl"` attribute for `<html>` tag, and left/right styles 
 
 `composer require acid-unit/theme-frontend-luma-rtl`
 
-# Important note
+# Usage
+
+To preview the theme, use `Magento Luma RTL (Acid Unit)` theme for Store View under
+`Content > Design > Configuration > Applied Theme` admin section.
+
+(because Luma RTL is based on Blank RTL theme, in the theme list you will notice both themes for selection)
+
+To use theme as a parent, use `<parent>AcidUnit/luma-rtl</parent>` in your `theme.xml` file.
+
+# Note
 
 The theme is based on [Blank RTL](https://github.com/acid-unit/theme-blank-rtl/) theme, not on Magento's original Luma theme,
-so in order to be identical to Magento's Luma theme in any way, it contains all the style, layout, template and other files
+so in order to be identical to Magento's Luma theme in all ways, it contains all the style, layout, template and other files
 that original Luma theme has.
 
-Along with that, there are LESS files that do not have any CSS rules to be RTL-modified.
+According to that, Luma RTL has `.less` files that are identical to the original Luma theme files, because there are no CSS rules to be RTL-modified.
 
 These files have a `// @no_changes` comment at the top.
 If the file does not have this comment, that means it has at least a single CSS rule updated.
@@ -48,8 +57,5 @@ If the file does not have this comment, that means it has at least a single CSS 
 
 - `@icon-prev` and `@icon-next` icon variables values are swapped too
 - All modified CSS rules are marked with the `// @rtl` comment
-- `// @lib-bug` comments mark original Blank theme-related bugs
-- `// @new` comments mark CSS rules that are not presented in Blank theme and were added for a correct display of RTL
-  styles
 - `// @keep-old` comments mark CSS rules, values of which were not changed, though they fall under the general update
   rule
