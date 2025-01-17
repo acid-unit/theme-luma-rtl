@@ -13,6 +13,10 @@ the theme should work perfectly fine (though there is a chance some styles will 
 In general, that is an exact copy of Blank theme, but with added `direction: rtl;` rule
 for `<body>` tag, `dir="rtl"` attribute for `<html>` tag, and left/right styles swapped.
 
+# Preview
+
+![Theme Preview](media/preview.jpg)
+
 # Examples of CSS updates:
 
 | Original Luma                                                         | Luma RTL                                                            |
