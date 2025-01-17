@@ -2,6 +2,8 @@
 
 Magento 2 Luma theme RTL.
 
+Can be used as a parent for themes that use Hebrew, Arabic, and other RTL script languages.
+
 Based on [Blank RTL](https://github.com/acid-unit/theme-blank-rtl/) theme `v100.4.7-p1-0`, which, in turn,
 is based on Magento 2 Blank theme `v100.4.7-p1` (built-in to Magento `v2.4.7-p1`)
 
