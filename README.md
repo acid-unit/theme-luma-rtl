@@ -4,7 +4,7 @@ Magento 2 Luma theme RTL.
 
 Can be used as a parent for themes that use Hebrew, Arabic, and other RTL script languages.
 
-Based on [Blank RTL](https://github.com/acid-unit/theme-blank-rtl/) theme `v100.4.7-p1-0`, which, in turn,
+Based on [Blank RTL](https://acid.7prism.com/theme/blank-rtl/) theme `v100.4.7-p1-0`, which, in turn,
 is based on Magento 2 original Blank theme `v100.4.7-p1` (built-in to Magento `v2.4.7-p1`)
 
 It was not tested on the previous Magento versions, but as long as it is Magento 2.4.X,
@@ -48,7 +48,7 @@ To use theme as a parent, use `<parent>AcidUnit/luma-rtl</parent>` in your `them
 
 # Note
 
-The theme is based on [Blank RTL](https://github.com/acid-unit/theme-blank-rtl/) theme, not on Magento's original Luma theme,
+The theme is based on [Blank RTL](https://acid.7prism.com/theme/blank-rtl/) theme, not on Magento's original Luma theme,
 so in order to be identical to Magento's Luma theme in all ways, it contains all the style, layout, template and other files
 that original Luma theme has.
 
